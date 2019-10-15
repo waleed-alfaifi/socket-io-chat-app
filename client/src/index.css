@@ -1,0 +1,130 @@
+body,
+html {
+  overflow: hidden;
+}
+
+* {
+  font-family: 'Cairo', sans-serif;
+  direction: rtl;
+}
+
+input.form-control {
+  margin-bottom: 13px;
+}
+
+.welcome-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.chat-box {
+  background-color: silver;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.search-input {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  border-radius: 0.25rem !important;
+}
+
+.side-profile {
+  position: absolute;
+  top: 0;
+  right: -115%;
+  background: hsl(0, 0%, 95%);
+  transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  height: 100% !important;
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  text-align: right;
+  overflow: auto;
+}
+
+.side-profile.open {
+  right: 0;
+}
+
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 100vh;
+}
+
+.online-badge {
+  color: #00b33c;
+  position: relative;
+  right: -10px;
+  top: -15px;
+}
+
+/* Messages styles */
+
+.message-item {
+  position: relative;
+  max-width: 75%;
+  word-break: break-word;
+  padding: 0.25rem !important;
+  margin: 0.25rem 1rem !important;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  border-radius: 0.25rem !important;
+  background: #fff;
+  align-self: flex-start !important;
+  text-align: right;
+}
+
+.message-item.incoming {
+  background: #dcf8c6 !important;
+  align-self: flex-end !important;
+}
+
+.message-textarea {
+  resize: none;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  border-radius: 0.25rem !important;
+}
+
+#messages-section {
+  background: hsl(0, 0%, 95%);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+/* Contacts styles */
+
+#contacts-section {
+  border-left: 1px solid #dee2e6;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.contact {
+  display: flex;
+  border-bottom: 1px solid #dee2e6;
+  cursor: pointer;
+}
+
+.contact:hover {
+  background-color: hsl(0, 0%, 95%);
+}
+
+.contact.active {
+  background-color: hsl(0, 0%, 95%);
+}
+
+/* Utility classes */
+.clickable {
+  cursor: pointer;
+}
