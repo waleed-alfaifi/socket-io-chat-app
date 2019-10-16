@@ -36,12 +36,9 @@ class Chat extends Component {
   }
 
   initSocketIOServer = () => {
-    const socket = socketIO(
-      process.env.REACT_SOCKET_APP || 'ws://localhost:5000',
-      {
-        query: `token=${Auth.getToken()}`,
-      }
-    );
+    const socket = socketIO({
+      query: `token=${Auth.getToken()}`,
+    });
 
     socket.on('data', (user, messages, contacts, onlineUsers) => {
       this.setState({
