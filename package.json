@@ -21,7 +21,7 @@
   "scripts": {
     "start": "node ./server/server.js",
     "dev": "nodemon ./server/server.js",
-    "heroku-postbuild": "cd client && npm install -D && npm install && npm run build"
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
   },
   "engines": {
     "node": "10.16.3"
