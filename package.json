@@ -20,7 +20,8 @@
   },
   "scripts": {
     "start": "node ./server/server.js",
-    "dev": "nodemon ./server/server.js"
+    "dev": "nodemon ./server/server.js",
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "author": "Waleed",
   "license": "MIT"
