@@ -181,7 +181,7 @@ class Chat extends Component {
     return (
       <Row>
         <div
-          className={`col-12 col-md-4 d-md-block ${isChatting ? 'd-none' : ''}`}
+          className={`col-12 col-lg-4 d-md-block ${isChatting ? 'd-none' : ''}`}
           id="contacts-section"
         >
           {!isViewingProfile && !isEditingProfile && (
@@ -208,7 +208,9 @@ class Chat extends Component {
         </div>
 
         <div
-          className={`col-12 col-md-8 d-md-flex ${!isChatting ? 'd-none' : ''}`}
+          className={`col-12 col-lg-8 d-md-flex ${
+            !isChatting ? 'd-none' : 'd-flex'
+          }`}
           id="messages-section"
         >
           {isViewingProfile && (
