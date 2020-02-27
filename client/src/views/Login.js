@@ -13,8 +13,8 @@ export default function Login(props) {
     document.title = title;
   });
 
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
+  const [username, setUsername] = useState('Test');
+  const [password, setPassword] = useState('test123456');
   const [error, setError] = useState('');
 
   const onSumbit = e => {
