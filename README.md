@@ -1,5 +1,5 @@
 ## Live Website
-https://mern-chatting-app.herokuapp.com/
+https://chat-app.cf/
 
 # Description
 This is a simple Whatsapp-like web application built using Node.js, Express.js and Socket.io with MongoDB as a database.
